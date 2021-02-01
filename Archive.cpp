@@ -6,7 +6,7 @@
 
 using namespace std;
 
-bool Unzip2Folder(BSTR lpZipFile, BSTR lpFolder)
+bool Unzip(BSTR lpZipFile, BSTR lpFolder)
 {
 	IShellDispatch* pISD;
 
@@ -90,8 +90,8 @@ bool Unzip2Folder(BSTR lpZipFile, BSTR lpFolder)
 int main()
 {
 	CComBSTR file("C:\\Users\\ganes\\Projects\\Archive\\IQ.zip");
-	CComBSTR folder("C:\\Users\\ganes\\Projects\\Archive\\IQ");
-	Unzip2Folder(file, folder);
+	CComBSTR folder("C:\\Users\\ganes\\Projects\\Archive\\Output");
+	Unzip(file, folder);
 
     return 0;
 }
