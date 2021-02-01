@@ -67,7 +67,7 @@ bool Unzip2Folder(BSTR lpZipFile, BSTR lpFolder)
 		Item.pdispVal = pItem;
 
 		Options.vt = VT_I4;
-		Options.lVal = 1024 | 512 | 16 | 4;//http://msdn.microsoft.com/en-us/library/bb787866(VS.85).aspx
+		Options.lVal = 1024 | 512 | 16 | 4;
 
 		bool retval = pDestination->CopyHere(Item, Options) == S_OK;
 
